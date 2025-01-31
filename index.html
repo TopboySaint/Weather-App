@@ -10,34 +10,38 @@
     <style>
         body {
             background-image: url(images/pexels-pixabay-209831.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         .bigDiv {
             
         }
-        .pict img{
-            width: 200px;
-            border-radius: 20px;
-            
+        h4{
+            background-image: url(images/imageCloud.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: #333;
+            font-family: cursive;
         }
     </style>
 </head>
 
 <body>
-    <div class="d-flex col-11 col-lg-6 col-md-8 mx-auto shadow shadow-black mt-3 p-3 justify-content-between">
-        <div>
-            <!-- <img src="images/imageCloud.gif" alt="" class="shadow"> -->
-            <input type="text" id="cityInput" placeholder="Search a City" class="form-control shadow-none">
-        </div>
+    <div class="col-11 col-lg-6 col-md-8 mx-auto shadow shadow-black mt-3 p-3">
+        <h4 class="text-center p-3 mt-2 mb-5 rounded-3 text-light">WEATHER CHECK.apk - SAINT.</h4>
+        <div class="d-flex justify-content-between">
 
-        <div>
-            <button onclick="weatherCheck()" class="btn text-white btn-dark">Check</button>
+            <div>
+                <input type="text" id="cityInput" placeholder="Search a City" class="form-control shadow-none">
+            </div>
+    
+            <div>
+                <button onclick="weatherCheck()" class="btn text-white btn-dark">Check</button>
+    
+            </div>
 
         </div>
-        <div id="show" class="mx-auto shadow shadow-black"></div>
     </div>
+    <div id="show" class="col-11 col-lg-6 col-md-8 mx-auto shadow shadow-black mt-3 p-3 text-center"></div>
 
 
 
